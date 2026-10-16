@@ -39,6 +39,7 @@ KasirGo cocok untuk toko retail, warung, kedai kopi, laundry, dan berbagai usaha
 - Produk & transaksi tanpa batas
 - Custom struk
 - Export laporan (Excel, PDF, dll)
+- Backup ke server (sinkronisasi backup ke cloud KasirGo)
 - Prioritas akses fitur terbaru
 
 Tidak ada biaya tersembunyi, bisa dibatalkan kapan saja. Harga Pro:

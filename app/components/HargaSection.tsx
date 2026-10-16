@@ -39,6 +39,13 @@ const HargaSection = () => {
         "Unduh laporan penjualan dalam format Excel, PDF, dan lainnya untuk analisa usaha.",
     },
     {
+      icon: "☁️",
+      iconBg: "bg-[#905694]/10",
+      title: "Backup ke Server",
+      description:
+        "Sinkronisasi backup data ke server KasirGo, jadi data usaha tetap aman dan bisa dipulihkan saat ganti HP.",
+    },
+    {
       icon: "🚀",
       iconBg: "bg-[#905694]/10",
       title: "Prioritas Fitur Terbaru",
@@ -52,6 +59,7 @@ const HargaSection = () => {
     { feature: "Transaksi Harian", gratis: "Maksimal 30 Transaksi/Hari", pro: "Tanpa Batas", proHighlight: true },
     { feature: "Custom Struk", gratis: "cross", pro: "check", proHighlight: false },
     { feature: "Export Laporan (Excel, PDF, dll)", gratis: "cross", pro: "check", proHighlight: false },
+    { feature: "Backup ke Server", gratis: "cross", pro: "check", proHighlight: false },
     { feature: "Prioritas Fitur Terbaru", gratis: "cross", pro: "check", proHighlight: false },
   ];
 
@@ -59,7 +67,7 @@ const HargaSection = () => {
     {
       question: "Apa perbedaan utama antara paket Gratis dan Pro?",
       answer:
-        "Paket Gratis cocok untuk coba pakai, dengan batas 30 produk dan 30 transaksi per hari. Paket Pro menghilangkan semua batas itu (produk dan transaksi tanpa batas), plus custom struk, export laporan (Excel, PDF, dll), dan prioritas akses ke fitur terbaru.",
+        "Paket Gratis cocok untuk coba pakai, dengan batas 30 produk dan 30 transaksi per hari. Paket Pro menghilangkan semua batas itu (produk dan transaksi tanpa batas), plus custom struk, export laporan (Excel, PDF, dll), backup ke server, dan prioritas akses ke fitur terbaru.",
     },
     {
       question: "Apakah ada biaya tersembunyi di paket Pro?",
