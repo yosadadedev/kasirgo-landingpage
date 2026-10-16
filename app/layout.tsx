@@ -16,12 +16,12 @@ const jetBrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const siteUrl = "https://kasirgoplus.my.id";
+const siteUrl = "https://kasirgo.co.id";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "KasirGo+ - Aplikasi Kasir Digital & POS untuk UMKM, Mudah & Praktis",
-  description: "KasirGo+ adalah aplikasi kasir digital dan POS (Point of Sale) untuk mengelola penjualan, stok barang, dan keuangan usaha Anda. Cocok untuk toko, warung, kulakan, dan UMKM Indonesia. Offline-first, aman, dan bisa mulai gratis kapan saja.",
+  title: "KasirGo - Aplikasi Kasir & POS untuk UMKM, Mudah & Praktis",
+  description: "Aplikasi kasir & POS untuk UMKM: kelola penjualan, stok, dan laporan keuangan. Cocok untuk toko, warung, dan kedai. Bisa offline, mulai gratis.",
   keywords: [
     "aplikasi kasir",
     "kasir digital",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     "umkm",
     "kasirgo+"
   ],
-  authors: [{ name: "KasirGo+" }],
+  authors: [{ name: "KasirGo" }],
   icons: {
     icon: "/favicon.svg",
   },
@@ -42,38 +42,35 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "KasirGo+ - Aplikasi Kasir Digital & POS untuk UMKM",
-    description: "Kelola penjualan, stok barang, dan keuangan dengan aplikasi kasir KasirGo+. Sistem POS terbaik untuk HP, tablet, dan laptop — mudah & praktis dipakai.",
+    title: "KasirGo - Aplikasi Kasir Digital & POS untuk UMKM",
+    description: "Kelola penjualan, stok barang, dan keuangan dengan aplikasi kasir KasirGo. Sistem POS terbaik untuk HP, tablet, dan laptop — mudah & praktis dipakai.",
     type: "website",
     locale: "id_ID",
     url: siteUrl,
-    siteName: "KasirGo+",
-    images: [
-      {
-        url: "/kasir-screen.jpeg",
-        width: 575,
-        height: 1280,
-        alt: "Tampilan aplikasi KasirGo+",
-      },
-    ],
+    siteName: "KasirGo",
   },
   twitter: {
     card: "summary_large_image",
-    title: "KasirGo+ - Aplikasi Kasir Digital & POS untuk UMKM",
+    title: "KasirGo - Aplikasi Kasir Digital & POS untuk UMKM",
     description: "Aplikasi kasir digital dan POS untuk UMKM Indonesia, mudah & praktis dipakai.",
-    images: ["/kasir-screen.jpeg"],
   }
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  name: "KasirGo+",
+  name: "KasirGo",
   applicationCategory: "BusinessApplication",
   operatingSystem: "Android",
   description:
     "Aplikasi kasir digital dan POS (Point of Sale) untuk UMKM Indonesia — kelola penjualan, stok barang, dan keuangan usaha. Offline-first, bisa mulai gratis kapan saja.",
   url: siteUrl,
+  downloadUrl: "https://play.google.com/store/apps/details?id=com.yl.kasirgo",
+  installUrl: "https://play.google.com/store/apps/details?id=com.yl.kasirgo",
+  publisher: {
+    "@type": "Organization",
+    name: "Yosada Labs",
+  },
   offers: {
     "@type": "Offer",
     price: "0",
@@ -82,7 +79,7 @@ const jsonLd = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.7",
-    ratingCount: "62",
+    ratingCount: "218",
   },
 };
 

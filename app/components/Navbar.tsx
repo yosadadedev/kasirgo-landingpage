@@ -24,14 +24,14 @@ const Navbar = () => {
             <div className="w-10 h-10 relative bg-[#905694] rounded-lg flex items-center justify-center shadow-sm overflow-hidden">
               <Image
                 src="/kasirgoplus-icon.svg"
-                alt="KasirGo+ Logo"
+                alt="KasirGo Logo"
                 fill
                 className="object-contain scale-[0.8]"
                 priority
               />
             </div>
             <span className="text-xl font-bold text-gray-900 tracking-tight">
-              Kasir<span className="text-[#905694]">Go+</span>
+              Kasir<span className="text-[#905694]">Go</span>
             </span>
           </Link>
 
@@ -49,7 +49,7 @@ const Navbar = () => {
 
           <div className="flex items-center gap-3">
             <a
-              href="https://play.google.com/store/apps/details?id=com.yl.kasirgoplus&hl=id"
+              href="https://play.google.com/store/apps/details?id=com.yl.kasirgo&hl=id"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-3 sm:px-5 py-2.5 bg-white hover:bg-gray-50 border border-gray-200 text-gray-800 rounded-full transition-all font-medium text-base shadow-sm hover:shadow-md hover:-translate-y-0.5"

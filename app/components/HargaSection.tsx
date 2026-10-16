@@ -6,9 +6,7 @@ const HargaSection = () => {
   const [faqOpen, setFaqOpen] = useState<number | null>(0);
 
   const pricingPlans = [
-    { label: "Bulanan", price: "Rp24.900", period: "/bulan" },
-    { label: "3 Bulan", price: "Rp64.900", period: "/3 bulan" },
-    { label: "Tahunan", price: "Rp249.900", period: "/tahun" },
+    { label: "Bulanan", price: "Rp13.900", period: "/bulan" },
   ];
 
   const cloudFeatures = [
@@ -25,13 +23,6 @@ const HargaSection = () => {
       title: "Transaksi Unlimited",
       description:
         "Proses transaksi sebanyak apapun setiap hari tanpa batas harian.",
-    },
-    {
-      icon: "👥",
-      iconBg: "bg-[#905694]/10",
-      title: "Kasir Tanpa Batas",
-      description:
-        "Tambah akun kasir sesuai kebutuhan tim, tidak dibatasi hanya 1 kasir.",
     },
     {
       icon: "🧾",
@@ -59,7 +50,6 @@ const HargaSection = () => {
   const comparisonData = [
     { feature: "Jumlah Produk", gratis: "Maksimal 30 Produk", pro: "Tanpa Batas", proHighlight: true },
     { feature: "Transaksi Harian", gratis: "Maksimal 30 Transaksi/Hari", pro: "Tanpa Batas", proHighlight: true },
-    { feature: "Jumlah Kasir", gratis: "1 Kasir", pro: "Tanpa Batas", proHighlight: true },
     { feature: "Custom Struk", gratis: "cross", pro: "check", proHighlight: false },
     { feature: "Export Laporan (Excel, PDF, dll)", gratis: "cross", pro: "check", proHighlight: false },
     { feature: "Prioritas Fitur Terbaru", gratis: "cross", pro: "check", proHighlight: false },
@@ -69,12 +59,12 @@ const HargaSection = () => {
     {
       question: "Apa perbedaan utama antara paket Gratis dan Pro?",
       answer:
-        "Paket Gratis cocok untuk coba pakai, dengan batas 30 produk, 30 transaksi per hari, dan 1 akun kasir. Paket Pro menghilangkan semua batas itu (produk, transaksi, dan kasir tanpa batas), plus custom struk, export laporan (Excel, PDF, dll), dan prioritas akses ke fitur terbaru.",
+        "Paket Gratis cocok untuk coba pakai, dengan batas 30 produk dan 30 transaksi per hari. Paket Pro menghilangkan semua batas itu (produk dan transaksi tanpa batas), plus custom struk, export laporan (Excel, PDF, dll), dan prioritas akses ke fitur terbaru.",
     },
     {
       question: "Apakah ada biaya tersembunyi di paket Pro?",
       answer:
-        "Tidak ada. Harga yang tertera (Rp24.900/bulan, Rp64.900/3 bulan, atau Rp249.900/tahun) adalah harga akhir yang Anda bayar, tanpa biaya tambahan lainnya.",
+        "Tidak ada. Harga yang tertera (Rp13.900/bulan) adalah harga akhir yang Anda bayar, tanpa biaya tambahan lainnya.",
     },
     {
       question: "Apakah saya bisa membatalkan langganan Pro kapan saja?",
@@ -115,11 +105,11 @@ const HargaSection = () => {
               <h3 className="text-2xl font-extrabold text-gray-900">Paket Pro</h3>
             </div>
             <p className="text-gray-600 mb-6 pb-6 border-b border-gray-200">
-              Paket Gratis: 30 produk, 30 transaksi/hari, 1 kasir — cocok untuk coba pakai
+              Paket Gratis: 30 produk, 30 transaksi/hari — cocok untuk coba pakai
             </p>
 
             <p className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4">
-              Pilih Durasi Berlangganan Pro:
+              Harga Langganan Pro:
             </p>
 
             <div className="space-y-4">
@@ -137,17 +127,22 @@ const HargaSection = () => {
                   <span>{plan.period}</span>
                 </p>
                 </div>
-                <button
-                  type="button"
-                  className="px-6 py-3 bg-[#905694] hover:bg-[#794A80] text-white rounded-full font-bold shadow-md shadow-[#905694]/25 hover:shadow-[#905694]/40 hover:-translate-y-0.5 transition-all"
-                >
-                  Langganan
-                </button>
               </div>
             ))}
             </div>
             <p className="text-sm text-gray-500 text-center mt-5">
               Tidak ada biaya tersembunyi. Bisa dibatalkan kapan saja.
+            </p>
+            <p className="text-sm text-gray-600 text-center mt-2">
+              Mau paket selain bulanan (3 bulan, tahunan, dll)?{" "}
+              <a
+                href="https://wa.me/62859106610011"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-green-600 hover:text-green-700 underline underline-offset-2"
+              >
+                Chat admin via WhatsApp
+              </a>
             </p>
           </div>
 

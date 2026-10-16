@@ -7,7 +7,7 @@ const CaraPakaiSection = () => {
       icon: "📲",
       title: "Download di Play Store",
       description:
-        "Unduh aplikasi KasirGo+ dari Google Play Store di handphone Android Anda. Gratis tanpa iklan mengganggu.",
+        "Unduh aplikasi KasirGo dari Google Play Store di handphone Android Anda. Gratis tanpa iklan mengganggu.",
     },
     {
       number: "2",
@@ -66,7 +66,7 @@ const CaraPakaiSection = () => {
 
         <div className="mt-16 text-center">
           <a
-            href="https://play.google.com/store/apps/details?id=com.yl.kasirgoplus&hl=id"
+            href="https://play.google.com/store/apps/details?id=com.yl.kasirgo&hl=id"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-6 py-3 bg-white hover:bg-gray-50 border border-gray-200 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"

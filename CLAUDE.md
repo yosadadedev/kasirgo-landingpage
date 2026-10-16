@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-Marketing landing page for **KasirGo+**, a free POS/kasir digital app for Indonesian UMKM (small businesses — toko, warung, kulakan). The page itself is static marketing content; it drives traffic to the actual app on the Play Store (`com.yl.kasirgoplus`) and to WhatsApp for contact. There is no backend, auth, or database in this repo.
+Marketing landing page for **KasirGo**, a free POS/kasir digital app for Indonesian UMKM (small businesses — toko, warung, kulakan). The page itself is static marketing content; it drives traffic to the actual app on the Play Store (`com.yl.kasirgo`) and to WhatsApp for contact. There is no backend, auth, or database in this repo.
 
 ## Commands
 
@@ -33,11 +33,11 @@ There is no test suite configured in this project.
 - All section components live flat in `app/components/`, one file per section, each a default-exported component with no props — content is hardcoded in Indonesian directly in JSX (no CMS, no i18n layer).
 - Brand color is `#905694` (purple), used ad hoc via arbitrary Tailwind values (`bg-[#905694]`, etc.) rather than a theme token — match this when adding new UI.
 - `app/menu/[slug]`, `app/menu/_components`, `app/menu/_utils` exist as empty scaffolding directories — an in-progress/planned dynamic per-store menu page feature, not yet implemented.
-- Hero/feature screenshots in `public/*.jpeg` are rendered with `unoptimized` on `next/image` (skips Next's image optimization pipeline).
+- Hero screenshots in `public/*.jpg` (720×1600) go through `next/image` optimization, served by Netlify Image CDN in production (site is deployed on Netlify via its auto-detected Next.js adapter). Keep `sizes` in `HeroSection.tsx` matched to the phone frames' rendered widths if you change their layout.
 
 ## App reference data
 
-`APP_INFO.md` holds factual data about the actual KasirGo+ app (features, pricing, changelog, rating, contact) scraped from its Play Store listing. Use it as the source of truth when writing/updating marketing copy so claims on the landing page stay accurate — don't invent features or numbers not backed by it.
+`APP_INFO.md` holds factual data about the actual KasirGo app (features, pricing, changelog, rating, contact) scraped from its Play Store listing. Use it as the source of truth when writing/updating marketing copy so claims on the landing page stay accurate — don't invent features or numbers not backed by it.
 
 ## Note on AGENTS.md
 

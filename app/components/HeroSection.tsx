@@ -29,17 +29,17 @@ const HeroSection = () => {
 
             <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
               Kelola penjualan, stok barang, dan keuangan dengan aplikasi kasir gratis{" "}
-              <strong>KasirGo+</strong>. Sistem POS (Point of Sale) terbaik untuk HP, tablet, dan laptop — offline-first, mulai gratis kapan saja.
+              <strong>KasirGo</strong>. Sistem POS (Point of Sale) terbaik untuk HP, tablet, dan laptop — offline-first, mulai gratis kapan saja.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 pt-1">
               <a
-                href="https://play.google.com/store/apps/details?id=com.yl.kasirgoplus&hl=id"
+                href="https://play.google.com/store/apps/details?id=com.yl.kasirgo&hl=id"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 px-6 py-3 bg-[#905694] hover:bg-[#794A80] text-white rounded-full transition-all font-semibold text-base shadow-[0_14px_30px_-12px_rgba(144,86,148,0.55)] hover:shadow-[0_16px_35px_-12px_rgba(144,86,148,0.7)] hover:-translate-y-0.5"
               >
-                Coba KasirGo+ Sekarang
+                Coba KasirGo Sekarang
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
@@ -66,7 +66,7 @@ const HeroSection = () => {
                 </div>
                 <div>
                   <p className="font-medium text-gray-700 text-sm">
-                    <span className="text-purple-600 font-bold">3.170</span> pemilik usaha telah bergabung
+                    <span className="text-purple-600 font-bold">41.400</span> pemilik usaha telah bergabung
                   </p>
                 </div>
               </div>
@@ -96,12 +96,11 @@ const HeroSection = () => {
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-14 h-[0.85rem] sm:w-20 sm:h-[1.15rem] bg-gray-900 rounded-b-[0.8rem] z-30" />
                     <div className="relative w-full h-full overflow-hidden rounded-[1.65rem] bg-white">
                       <Image
-                        src="/trnasaksi-screen.jpeg"
-                        alt="Tampilan Transaksi KasirGo+"
+                        src="/trnasaksi-screen.jpg"
+                        alt="Tampilan Transaksi KasirGo"
                         fill
                         className="object-contain"
-                        sizes="(max-width: 768px) 100vw, 200px"
-                        unoptimized
+                        sizes="(max-width: 639px) 120px, 208px"
                       />
                     </div>
                   </div>
@@ -112,12 +111,11 @@ const HeroSection = () => {
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-14 h-[0.85rem] sm:w-20 sm:h-[1.15rem] bg-gray-900 rounded-b-[0.8rem] z-30" />
                     <div className="relative w-full h-full overflow-hidden rounded-[1.65rem] bg-white">
                       <Image
-                        src="/report-screen.jpeg"
-                        alt="Tampilan Laporan Keuangan KasirGo+"
+                        src="/report-screen.jpg"
+                        alt="Tampilan Laporan Keuangan KasirGo"
                         fill
                         className="object-contain"
-                        sizes="(max-width: 768px) 100vw, 200px"
-                        unoptimized
+                        sizes="(max-width: 639px) 120px, 208px"
                       />
                     </div>
                   </div>
@@ -128,13 +126,12 @@ const HeroSection = () => {
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-[0.95rem] sm:w-24 sm:h-[1.3rem] bg-gray-900 rounded-b-[0.9rem] z-30" />
                     <div className="relative w-full h-full overflow-hidden rounded-[1.9rem] bg-white">
                       <Image
-                        src="/kasir-screen.jpeg"
-                        alt="Tampilan Menu Kasir KasirGo+"
+                        src="/kasir-screen.jpg"
+                        alt="Tampilan Menu Kasir KasirGo"
                         fill
                         className="object-contain"
                         priority
-                        sizes="(max-width: 768px) 100vw, 300px"
-                        unoptimized
+                        sizes="(max-width: 639px) 176px, 280px"
                       />
                     </div>
                   </div>

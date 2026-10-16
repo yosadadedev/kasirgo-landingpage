@@ -10,13 +10,13 @@ const Footer = () => {
               <div className="w-10 h-10 relative bg-[#905694] rounded-lg flex items-center justify-center shadow-sm overflow-hidden">
                 <Image
                   src="/kasirgoplus-icon.svg"
-                  alt="KasirGo+ Logo"
+                  alt="KasirGo Logo"
                   fill
                   className="object-contain scale-[0.8]"
                 />
               </div>
               <span className="text-xl font-bold text-white tracking-tight">
-                Kasir<span className="text-[#905694]">Go+</span>
+                Kasir<span className="text-[#905694]">Go</span>
               </span>
             </div>
             <p className="text-gray-400 leading-relaxed max-w-md mb-6">
@@ -25,7 +25,7 @@ const Footer = () => {
             </p>
             <div className="flex items-center gap-4">
               <a
-                href="https://play.google.com/store/apps/details?id=com.yl.kasirgoplus&hl=id"
+                href="https://play.google.com/store/apps/details?id=com.yl.kasirgo&hl=id"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-6 py-3 bg-white hover:bg-gray-50 border border-gray-200 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"
@@ -78,10 +78,10 @@ const Footer = () => {
                   Email
                 </span>
                 <a
-                  href="mailto:halokasirgoplus@gmail.com"
+                  href="mailto:halokasirgo@gmail.com"
                   className="text-gray-400 hover:text-purple-400 transition-colors"
                 >
-                  halokasirgoplus@gmail.com
+                  halokasirgo@gmail.com
                 </a>
               </li>
               <li>
@@ -99,7 +99,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-14 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-gray-500">
-            © {new Date().getFullYear()} KasirGo+. Dibuat dengan ❤️ untuk UMKM Indonesia oleh{" "}
+            © {new Date().getFullYear()} KasirGo. Dibuat dengan ❤️ untuk UMKM Indonesia oleh{" "}
             <a
               href="https://play.google.com/store/apps/developer?id=Yosada+Labs"
               target="_blank"

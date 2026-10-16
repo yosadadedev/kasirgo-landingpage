@@ -9,17 +9,29 @@ const FAQSection = () => {
     {
       question: "Apakah benar-benar gratis?",
       answer:
-        "Bisa dipakai gratis dengan akses hampir semua fitur POS — tinggal install dan langsung transaksi tanpa bayar. Kalau butuh lebih longgar, tersedia opsi upgrade ke Pro seharga Rp24.900/bulan.",
+        "Bisa dipakai gratis dengan akses hampir semua fitur POS — tinggal install dan langsung transaksi tanpa bayar. Kalau butuh lebih longgar, tersedia opsi upgrade ke Pro seharga Rp13.900/bulan.",
     },
     {
       question: "Apakah butuh internet?",
       answer:
-        "Tidak wajib! KasirGo+ dirancang dengan sistem offline-first. Semua transaksi, data produk, dan laporan tersimpan 100% di perangkat Anda. Internet hanya diperlukan jika Anda ingin backup ke cloud atau update aplikasi.",
+        "Tidak wajib! KasirGo dirancang dengan sistem offline-first. Semua transaksi, data produk, dan laporan tersimpan 100% di perangkat Anda. Internet hanya diperlukan jika Anda ingin backup ke cloud atau update aplikasi.",
     },
     {
       question: "Bisa dipakai banyak kasir/staf?",
-      answer:
-        "Bisa! Fitur multi-user memungkinkan Anda membuat akun staf dengan PIN 4-6 digit. Anda bisa atur hak akses per staf: misalnya staf kasir hanya bisa proses transaksi, tidak bisa lihat laporan keuangan.",
+      answer: (
+        <>
+          KasirGo tidak mendukung multi-user. Kalau usaha Anda butuh banyak kasir atau staf, gunakan{" "}
+          <a
+            href="https://play.google.com/store/apps/details?id=com.yl.kasirgoplus&hl=id"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-purple-600 hover:text-purple-700 underline underline-offset-2"
+          >
+            KasirGo+
+          </a>{" "}
+          yang mendukung multi-user.
+        </>
+      ),
     },
     {
       question: "Bisa simpan transaksi yang belum dibayar (open bill)?",
@@ -29,22 +41,22 @@ const FAQSection = () => {
     {
       question: "Bagaimana kalau HP rusak/hilang?",
       answer:
-        "Jangan panik! Selalu lakukan backup data secara berkala (bisa simpan ke Google Drive, email, atau HP lain). Jika HP rusak/hilang, tinggal install KasirGo+ di HP baru dan restore file backup yang Anda simpan.",
+        "Jangan panik! Aktifkan sinkronisasi backup ke cloud, data Anda akan tersimpan di server KasirGo. Jika HP rusak/hilang, tinggal install KasirGo di HP baru dan pulihkan data dari server KasirGo.",
     },
     {
       question: "Apakah data saya aman?",
       answer:
-        "Aman. KasirGo+ offline-first — data transaksi tersimpan di perangkat Anda dan otomatis tersinkron ke server saat online, jadi tetap terjaga meski ganti HP. Privasi dan keamanan data usaha Anda adalah prioritas utama kami.",
+        "Aman. KasirGo offline-first — semua data tersimpan di perangkat Anda. Ada opsi sinkronisasi backup ke cloud, jadi data tetap bisa dipulihkan meski ganti HP. Privasi dan keamanan data usaha Anda adalah prioritas utama kami.",
     },
     {
       question: "Bisa dipakai di tablet atau laptop?",
       answer:
-        "Bisa! Aplikasi KasirGo+ dirancang responsive untuk layar HP (5 inch) hingga tablet (10 inch). Untuk laptop/PC, Anda bisa pakai emulator Android.",
+        "Bisa! Aplikasi KasirGo dirancang responsive untuk layar HP (5 inch) hingga tablet (10 inch). Untuk laptop/PC, Anda bisa pakai emulator Android.",
     },
     {
       question: "Bagaimana cara cetak struk?",
       answer:
-        "KasirGo+ mendukung printer thermal Bluetooth ukuran 58mm dan 80mm dari berbagai merk (Epson, Xprinter, dll). Cukup pairing Bluetooth printer dengan HP Anda, lalu cetak struk otomatis setelah transaksi.",
+        "KasirGo mendukung printer thermal Bluetooth ukuran 58mm dan 80mm dari berbagai merk (Epson, Xprinter, dll). Cukup pairing Bluetooth printer dengan HP Anda, lalu cetak struk otomatis setelah transaksi.",
     },
   ];
 
@@ -60,7 +72,7 @@ const FAQSection = () => {
             Pertanyaan Umum
           </span>
           <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
-            Tanya Jawab Seputar Aplikasi Kasir & POS KasirGo+
+            Tanya Jawab Seputar Aplikasi Kasir & POS KasirGo
           </h2>
         </div>
 

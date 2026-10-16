@@ -1,5 +1,11 @@
 const KenapaSection = () => {
-  const features = [
+  const features: {
+    icon: string;
+    iconBg: string;
+    title: string;
+    description: string;
+    link?: { href: string; label: string };
+  }[] = [
     {
       icon: "🎁",
       iconBg: "bg-[#905694]/10",
@@ -12,21 +18,25 @@ const KenapaSection = () => {
       iconBg: "bg-teal-100",
       title: "POS Offline-First & Aman",
       description:
-        "Tetap bisa transaksi tanpa internet, data otomatis sinkron begitu online lagi. Privasi terjaga, kasir jalan terus kapan saja.",
+        "Tetap bisa transaksi tanpa internet, semua data tersimpan di perangkatmu. Butuh cadangan? Aktifkan sinkronisasi backup ke cloud.",
     },
     {
       icon: "🏪",
       iconBg: "bg-green-100",
       title: "Cocok untuk Semua Jenis Usaha",
       description:
-        "Dari warung, FnB, coffee shop, sampai barbershop — KasirGo+ fleksibel mengikuti cara kamu jualan.",
+        "Dari warung, FnB, coffee shop, sampai barbershop — KasirGo fleksibel mengikuti cara kamu jualan.",
     },
     {
       icon: "👥",
       iconBg: "bg-amber-100",
-      title: "Multi-User & Kontrol Akses",
+      title: "Butuh Banyak Kasir/Staf?",
       description:
-        "Atur kasir dan admin dengan izin akses berbeda (RBAC), cocok untuk usaha dengan lebih dari satu pegawai.",
+        "Untuk usaha dengan lebih dari satu kasir atau staf, gunakan KasirGo+ yang mendukung multi-user.",
+      link: {
+        href: "https://play.google.com/store/apps/details?id=com.yl.kasirgoplus&hl=id",
+        label: "Lihat KasirGo+ di Play Store",
+      },
     },
   ];
 
@@ -35,7 +45,7 @@ const KenapaSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6">
-            Kenapa <span className="text-purple-600">KasirGo+</span>?
+            Kenapa <span className="text-purple-600">KasirGo</span>?
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
             Dibuat dengan hati untuk membantu UMKM Indonesia naik kelas, dengan harga yang bersahabat di kantong.
@@ -57,6 +67,17 @@ const KenapaSection = () => {
               <p className="text-gray-600 leading-relaxed">
                 {feature.description}
               </p>
+              {feature.link && (
+                <a
+                  href={feature.link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 mt-4 font-semibold text-purple-600 hover:text-purple-700"
+                >
+                  {feature.link.label}
+                  <span aria-hidden="true">→</span>
+                </a>
+              )}
             </div>
           ))}
         </div>

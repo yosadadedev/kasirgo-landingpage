@@ -43,11 +43,11 @@ const FiturSection = () => {
         "Catat biaya operasional agar perhitungan keuntungan usaha lebih akurat.",
     },
     {
-      icon: "👥",
+      icon: "📝",
       iconBg: "bg-[#905694]/10",
-      title: "Multi-User & Hak Akses",
+      title: "Open Bill",
       description:
-        "Atur kasir dan admin dengan izin akses berbeda (RBAC) sesuai peran masing-masing.",
+        "Simpan transaksi sebagai bon terbuka lengkap dengan nama pelanggan, nomor meja, dan catatan per item.",
     },
     {
       icon: "🖨️",
@@ -59,9 +59,9 @@ const FiturSection = () => {
     {
       icon: "🔒",
       iconBg: "bg-teal-100",
-      title: "Data Aman, Lokal & Server",
+      title: "Data Lokal & Backup Cloud",
       description:
-        "Data transaksi tersimpan aman di perangkatmu dan otomatis tersinkron ke server, jadi tetap terjaga meski ganti HP.",
+        "Semua data tersimpan aman di perangkatmu. Ada opsi sinkronisasi backup ke cloud, jadi data tetap bisa dipulihkan saat ganti HP.",
     },
   ];
 
