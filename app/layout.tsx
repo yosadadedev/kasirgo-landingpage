@@ -35,9 +35,6 @@ export const metadata: Metadata = {
     "kasirgo+"
   ],
   authors: [{ name: "KasirGo" }],
-  icons: {
-    icon: "/favicon.svg",
-  },
   alternates: {
     canonical: "/",
   },
@@ -83,6 +80,14 @@ const jsonLd = {
   },
 };
 
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "KasirGo",
+  alternateName: ["KasirGo Aplikasi Kasir UMKM", "kasirgo.co.id"],
+  url: `${siteUrl}/`,
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
@@ -92,7 +97,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-full flex flex-col bg-white" suppressHydrationWarning>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify([websiteJsonLd, jsonLd]) }}
         />
         {children}
         <WhatsAppFloat />
