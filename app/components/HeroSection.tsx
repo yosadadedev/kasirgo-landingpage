@@ -66,7 +66,7 @@ const HeroSection = () => {
                 </div>
                 <div>
                   <p className="font-medium text-gray-700 text-sm">
-                    <span className="text-purple-600 font-bold">41.400</span> pemilik usaha telah bergabung
+                    <span className="text-purple-600 font-bold">42.800</span> pemilik usaha telah bergabung
                   </p>
                 </div>
               </div>

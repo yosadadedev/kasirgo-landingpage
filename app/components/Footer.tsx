@@ -94,8 +94,8 @@ const Footer = () => {
                   Alamat
                 </span>
                 <span className="block text-gray-400 leading-relaxed">
-                  Jl. Mijil, Gedongan, Bangunjiwo, Kec. Kasihan, Kabupaten Bantul,
-                  Daerah Istimewa Yogyakarta 55184
+                  Gang Adipurnan 197 Kel. Kalicacing, Kec. Sidomukti,
+                  Kota Salatiga, Jawa Tengah 50724
                 </span>
               </li>
             </ul>
@@ -111,7 +111,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-purple-400 transition-colors"
             >
-              Yosada Labs
+              PT APLIKASI GO UMKM
             </a>
             .
           </p>
