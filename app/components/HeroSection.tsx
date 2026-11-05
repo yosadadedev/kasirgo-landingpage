@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { stores } from "./StoreBadges";
 
 const HeroSection = () => {
   return (
@@ -32,18 +33,21 @@ const HeroSection = () => {
               <strong>KasirGo</strong>. Sistem POS (Point of Sale) terbaik untuk HP, tablet, dan laptop — offline-first, mulai gratis kapan saja.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 pt-1">
-              <a
-                href="https://play.google.com/store/apps/details?id=com.yl.kasirgo&hl=id"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 px-6 py-3 bg-[#905694] hover:bg-[#794A80] text-white rounded-full transition-all font-semibold text-base shadow-[0_14px_30px_-12px_rgba(144,86,148,0.55)] hover:shadow-[0_16px_35px_-12px_rgba(144,86,148,0.7)] hover:-translate-y-0.5"
-              >
-                Coba KasirGo Sekarang
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </a>
+            <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3 pt-1">
+              {stores.map((store) => (
+                <a
+                  key={store.name}
+                  href={store.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 px-6 py-3 bg-[#905694] hover:bg-[#794A80] text-white rounded-full transition-all font-semibold text-base shadow-[0_14px_30px_-12px_rgba(144,86,148,0.55)] hover:shadow-[0_16px_35px_-12px_rgba(144,86,148,0.7)] hover:-translate-y-0.5"
+                >
+                  <span className="flex items-center justify-center w-6 h-6 bg-white rounded-full">
+                    <Image src={store.icon} alt={store.alt} width={14} height={14} />
+                  </span>
+                  {store.name}
+                </a>
+              ))}
               <a
                 href="#fitur"
                 className="flex items-center justify-center gap-2 px-6 py-3 bg-white border border-gray-200 hover:border-gray-300 hover:bg-gray-50 text-gray-800 rounded-full transition-all font-semibold text-base shadow-sm"

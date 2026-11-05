@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { KASIRGO_PLUS_APP_STORE_URL, KASIRGO_PLUS_PLAY_STORE_URL } from "./StoreBadges";
 
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -20,16 +21,26 @@ const FAQSection = () => {
       question: "Bisa dipakai banyak kasir/staf?",
       answer: (
         <>
-          KasirGo tidak mendukung multi-user. Kalau usaha Anda butuh banyak kasir atau staf, gunakan{" "}
+          KasirGo tidak mendukung multi-user. Kalau usaha Anda butuh banyak kasir atau staf, gunakan
+          KasirGo+ yang mendukung multi-user, tersedia di{" "}
           <a
-            href="https://play.google.com/store/apps/details?id=com.yl.kasirgoplus&hl=id"
+            href={KASIRGO_PLUS_PLAY_STORE_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="font-semibold text-purple-600 hover:text-purple-700 underline underline-offset-2"
           >
-            KasirGo+
+            Play Store
           </a>{" "}
-          yang mendukung multi-user.
+          dan{" "}
+          <a
+            href={KASIRGO_PLUS_APP_STORE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-purple-600 hover:text-purple-700 underline underline-offset-2"
+          >
+            App Store
+          </a>
+          .
         </>
       ),
     },

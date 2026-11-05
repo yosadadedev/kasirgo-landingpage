@@ -1,4 +1,5 @@
 import Image from "next/image";
+import StoreBadges from "./StoreBadges";
 
 const Footer = () => {
   return (
@@ -23,25 +24,7 @@ const Footer = () => {
               Aplikasi kasir digital & POS untuk UMKM Indonesia. Kelola penjualan, stok barang,
               dan keuangan usaha Anda dengan mudah. Offline-first, aman, dan bisa mulai gratis kapan saja.
             </p>
-            <div className="flex items-center gap-4">
-              <a
-                href="https://play.google.com/store/apps/details?id=com.yl.kasirgo&hl=id"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 px-6 py-3 bg-white hover:bg-gray-50 border border-gray-200 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"
-              >
-                <Image
-                  src="/google-play-store-icon.svg"
-                  alt="Google Play"
-                  width={36}
-                  height={36}
-                />
-                <span className="flex flex-col items-start leading-tight">
-                  <span className="text-xs text-gray-500">Download di</span>
-                  <span className="text-lg font-bold text-gray-800">Play Store</span>
-                </span>
-              </a>
-            </div>
+            <StoreBadges />
           </div>
 
           <div>

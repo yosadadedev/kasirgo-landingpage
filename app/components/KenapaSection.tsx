@@ -1,10 +1,12 @@
+import { KASIRGO_PLUS_APP_STORE_URL, KASIRGO_PLUS_PLAY_STORE_URL } from "./StoreBadges";
+
 const KenapaSection = () => {
   const features: {
     icon: string;
     iconBg: string;
     title: string;
     description: string;
-    link?: { href: string; label: string };
+    links?: { href: string; label: string }[];
   }[] = [
     {
       icon: "🎁",
@@ -33,10 +35,10 @@ const KenapaSection = () => {
       title: "Butuh Banyak Kasir/Staf?",
       description:
         "Untuk usaha dengan lebih dari satu kasir atau staf, gunakan KasirGo+ yang mendukung multi-user.",
-      link: {
-        href: "https://play.google.com/store/apps/details?id=com.yl.kasirgoplus&hl=id",
-        label: "Lihat KasirGo+ di Play Store",
-      },
+      links: [
+        { href: KASIRGO_PLUS_PLAY_STORE_URL, label: "KasirGo+ di Play Store" },
+        { href: KASIRGO_PLUS_APP_STORE_URL, label: "KasirGo+ di App Store" },
+      ],
     },
   ];
 
@@ -67,16 +69,21 @@ const KenapaSection = () => {
               <p className="text-gray-600 leading-relaxed">
                 {feature.description}
               </p>
-              {feature.link && (
-                <a
-                  href={feature.link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 mt-4 font-semibold text-purple-600 hover:text-purple-700"
-                >
-                  {feature.link.label}
-                  <span aria-hidden="true">→</span>
-                </a>
+              {feature.links && (
+                <div className="flex flex-col items-start gap-2 mt-4">
+                  {feature.links.map((link) => (
+                    <a
+                      key={link.href}
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 font-semibold text-purple-600 hover:text-purple-700"
+                    >
+                      {link.label}
+                      <span aria-hidden="true">→</span>
+                    </a>
+                  ))}
+                </div>
               )}
             </div>
           ))}

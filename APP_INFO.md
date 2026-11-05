@@ -64,7 +64,7 @@ Paket selain bulanan (3 bulan, tahunan, dll) tersedia dengan chat admin via What
 - **Riwayat & Refund**: pencarian transaksi lengkap, refund partial atau penuh
 - **Sinkronisasi backup ke cloud**: data dicadangkan ke server KasirGo dan bisa dipulihkan di HP baru. Tidak ada opsi backup ke Google Drive / email atau restore dari file backup
 
-> KasirGo **tidak** mendukung multi-user / hak akses (RBAC). Jangan klaim fitur ini di landing page — arahkan kebutuhan banyak kasir/staf ke **KasirGo+** (https://play.google.com/store/apps/details?id=com.yl.kasirgoplus&hl=id).
+> KasirGo **tidak** mendukung multi-user / hak akses (RBAC). Jangan klaim fitur ini di landing page — arahkan kebutuhan banyak kasir/staf ke **KasirGo+** (Play Store: https://play.google.com/store/apps/details?id=com.yl.kasirgoplus&hl=id, App Store: https://apps.apple.com/id/app/kasirgo-aplikasi-kasir-umkm/id6829119858).
 
 ## Keunggulan
 
@@ -81,3 +81,4 @@ Paket selain bulanan (3 bulan, tahunan, dll) tersedia dengan chat admin via What
 
 - WhatsApp: https://wa.me/62859106610011 (dipakai di [Navbar.tsx](app/components/Navbar.tsx))
 - Play Store: https://play.google.com/store/apps/details?id=com.yl.kasirgo&hl=id
+- App Store: https://apps.apple.com/id/app/kasirgo-aplikasi-kasir-umkm/id6817185397 (URL disimpan di [StoreBadges.tsx](app/components/StoreBadges.tsx))

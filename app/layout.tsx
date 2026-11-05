@@ -58,7 +58,7 @@ const jsonLd = {
   "@type": "SoftwareApplication",
   name: "KasirGo",
   applicationCategory: "BusinessApplication",
-  operatingSystem: "Android",
+  operatingSystem: "Android, iOS",
   description:
     "Aplikasi kasir digital dan POS (Point of Sale) untuk UMKM Indonesia — kelola penjualan, stok barang, dan keuangan usaha. Offline-first, bisa mulai gratis kapan saja.",
   url: siteUrl,
